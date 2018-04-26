@@ -108,3 +108,10 @@ $ git help config
 ```
 
 我们随时都可以浏览这些帮助信息而无需连网。 不过，要是你觉得还不够，可以到 Freenode IRC 服务器（irc.freenode.net）上的 `git` 或 `github` 频道寻求他人帮助。这两个频道上总有着上百号人，大多都有着丰富的 Git 知识，并且乐于助人。
+
+---
+## 常见问题
+
+1.
+- 问题：Gitlab的develop角色的人没有权限无法提交的问题解决方案.建好仓库，将其他几位同事添加进来，角色分配为Develop。之后提交初始代码到master分支后，他们用sourceTree拉取代码后进行开发，之后再提交时发现无法提交，提示没有权限
+- 解决方案： 在项目的【Setting】中的【Protected branches】可以设置哪些分支是被保护的，默认情况下【master】分支是处于被保护状态下的，develop角色的人是无法提交到master分支的，在下面的【Developers can push】打上钩就可以了
